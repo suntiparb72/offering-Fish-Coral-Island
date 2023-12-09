@@ -1,10 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Box from "../components/Box.astro";
 import fish from "../contents/fish.json";
-
-console.log(fish);
 ---
 
 <Layout title="Offering Fish Coral Island">
@@ -38,31 +35,42 @@ console.log(fish);
       </defs>
     </svg>
     <h1><span class="text-gradient">Offering Fish Coral Island</span></h1>
-    <!-- <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-      above.
-    </p> -->
 
-    <!-- <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-    </ul> -->
-    <ul role="list" class="link-card-grid">
-      {fish.map((item) => (
-        <Box 
-          href={item.name}
-          title={item.name}
-          body={item.season}
-        />
-        )
-        )}
-    </ul>
+    <h3 class="h3 flex space-x-4">
+      <!-- <span>Season</span> -->
+      <button class="image-button">
+        <img src="../../public/images/season/all.png" alt="Image Alt Text" />
+        <span>ALL</span>
+      </button>
+      <button class="image-button" id="spring">
+        <img src="../../public/images/season/spring.png" alt="Image Alt Text" />
+        <span>Spring</span>
+      </button>
+      <button class="image-button">
+        <img src="../../public/images/season/summer.png" alt="Image Alt Text" />
+        <span>Summer</span>
+      </button>
+      <button class="image-button">
+        <img src="../../public/images/season/fall.png" alt="Image Alt Text" />
+        <span>Fall</span>
+      </button>
+      <button class="image-button">
+        <img src="../../public/images/season/winter.png" alt="Image Alt Text" />
+        <span>Winter</span>
+      </button>
+    </h3>
+
+    <span>Season : ALL</span>    
+
   </main>
+
+  <ul role="list" class="link-card-grid">
+    {
+      fish.map((item) => (
+        <Box name={item.name} season={item.season} note={item.note} />
+      ))
+    }
+  </ul>
 </Layout>
 
 <style>
@@ -125,4 +133,10 @@ console.log(fish);
     gap: 2rem;
     padding: 0;
   }
+  /*  */
+  .image-button img {
+    width: 30px; 
+    height: 30px;
+  }
+
 </style>
