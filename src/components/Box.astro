@@ -3,15 +3,16 @@ interface Props {
   name: string;
   season: any;
   note: string;
+  filename: string;
 }
 
-const { name, season, note } = Astro.props;
+const { name, season, note, filename } = Astro.props;
 ---
 
 <li class="link-card">
   <a>
     <span>
-		<img src="../../public/images/fish/Catfish.png">
+		<img src=`../../public/images/fish/${filename}`>
       <h2>
         {name}
         <span>&rarr;</span>

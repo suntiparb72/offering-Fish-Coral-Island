@@ -4,67 +4,79 @@
         "season": [
             "Spring",
             "Summer"
-        ]
+        ],
+        "filename": "Catfish.png"
     },
     {
         "name": "Tilapia",
         "season": [
             "Spring",
             "Winter"
-        ]
+        ],
+        "filename": "Tilapia.png"
     },
     {
         "name": "Rainbow fish",
         "season": [
             "Spring",
             "Winter"
-        ]
+        ],
+        "filename": "Rainbow_fish.png"
     },
     {
         "name": "Silver arowana",
         "season": [
             "Winter"
-        ]
+        ],
+        "filename": "Silver_arowana.png"
     },
     {
         "name": "Koi (silver quality)",
         "season": [
             "Spring",
             "Summer"
-        ]
+        ],
+        "filename": "Koi.png"
     },
     {
         "name": "Pink snapper",
         "season": [
             "Spring",
             "Winter"
-        ]
+        ],
+        "filename": "Pink_snapper.png"
     },
     {
         "name": "Lion fish",
         "season": [
             "Spring",
             "Summer"
-        ]
+        ],
+        "filename": "Lionfish.png"
     },
     {
         "name": "Asian sheepshead",
         "season": [
             "Winter"
-        ]
+        ],
+        "filename": "Asian_sheepshead.webp"
+        
     },
     {
         "name": "Yellowfin tuna",
         "season": [
             "Winter"
-        ]
+        ],
+        "filename": "Yellowfin_tuna.png"
+
     },
     {
         "name": "Sardine (silver quality)",
         "season": [
             "Summer",
             "Fall"
-        ]
+        ],
+        "filename": "Sardine.png"
     },
     {
         "name": "Sturgeon",
@@ -72,28 +84,32 @@
             "Summer",
             "Fall",
             "Winter"
-        ]
+        ],
+        "filename": "Sturgeon.png"
     },
     {
         "name": "Gator gar",
         "note": "day 3-28",
         "season": [
             "Spring"
-        ]
+        ],
+        "filename" : "Gator_gar.png"
     },
     {
         "name": "Arapaima",
         "season": [
             "Fall",
             "Winter"
-        ]
+        ],
+        "filename": "Arapaima.png"
     },
     {
         "name": "Giant sea bass",
         "note": "day 1-7",
         "season": [
             "Fall"
-        ]
+        ],
+        "filename": "Giant_sea_bass.png"
     },
     {
         "name": "Yellow moray eel",
@@ -101,6 +117,7 @@
         "season": [
             "Spring",
             "Summer"
-        ]
+        ],
+        "filename": "Yellow_moray_eel.png"
     }
 ]

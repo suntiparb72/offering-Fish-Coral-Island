@@ -38,7 +38,6 @@ import Menu from "../components/Menu.astro";
     <h1><span class="text-gradient">Offering Fish Coral Island</span></h1>
 
     <Menu />
-    
 
     <span>Season : ALL</span>
   </main>
@@ -46,7 +45,12 @@ import Menu from "../components/Menu.astro";
   <ul role="list" class="link-card-grid">
     {
       fish.map((item) => (
-        <Box name={item.name} season={item.season} note={item.note} />
+        <Box
+          name={item.name}
+          season={item.season}
+          note={item.note}
+          filename={item.filename}
+        />
       ))
     }
   </ul>
@@ -112,5 +116,4 @@ import Menu from "../components/Menu.astro";
     gap: 2rem;
     padding: 0;
   }
-  
 </style>

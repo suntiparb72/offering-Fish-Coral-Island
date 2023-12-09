@@ -4,7 +4,7 @@ import Box from "../components/Box.astro";
 import fishData from "../contents/fish.json";
 import Menu from "../components/Menu.astro";
 
-const springFish = fishData.filter(fish => fish.season.includes('Spring'));
+const springFish = fishData.filter((fish) => fish.season.includes("Spring"));
 ---
 
 <Layout title="Offering Fish Coral Island">
@@ -41,14 +41,18 @@ const springFish = fishData.filter(fish => fish.season.includes('Spring'));
 
     <Menu />
 
-    <span>Season : Spring</span>    
-
+    <span>Season : Spring</span>
   </main>
 
   <ul role="list" class="link-card-grid">
     {
       springFish.map((item) => (
-        <Box name={item.name} season={item.season} note={item.note} />
+        <Box
+          name={item.name}
+          season={item.season}
+          note={item.note}
+          filename={item.filename}
+        />
       ))
     }
   </ul>
@@ -116,8 +120,7 @@ const springFish = fishData.filter(fish => fish.season.includes('Spring'));
   }
   /*  */
   .image-button img {
-    width: 30px; 
+    width: 30px;
     height: 30px;
   }
-
 </style>
