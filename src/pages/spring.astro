@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Box from "../components/Box.astro";
-import fish from "../contents/fish.json";
+import fishData from "../contents/fish.json";
 import Menu from "../components/Menu.astro";
+
+const springFish = fishData.filter(fish => fish.season.includes('Spring'));
 ---
 
 <Layout title="Offering Fish Coral Island">
@@ -45,7 +47,7 @@ import Menu from "../components/Menu.astro";
 
   <ul role="list" class="link-card-grid">
     {
-      fish.map((item) => (
+      springFish.map((item) => (
         <Box name={item.name} season={item.season} note={item.note} />
       ))
     }
