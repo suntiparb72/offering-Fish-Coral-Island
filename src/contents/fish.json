@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Catfish",
+        "season": [
+            "Spring",
+            "Summer"
+        ]
+    },
+    {
+        "name": "Tilapia",
+        "season": [
+            "Spring",
+            "Winter"
+        ]
+    },
+    {
+        "name": "Rainbow fish",
+        "season": [
+            "Spring",
+            "Winter"
+        ]
+    },
+    {
+        "name": "Silver arowana",
+        "season": [
+            "Winter"
+        ]
+    },
+    {
+        "name": "Koi (silver quality)",
+        "season": [
+            "Spring",
+            "Summer"
+        ]
+    },
+    {
+        "name": "Pink snapper",
+        "season": [
+            "Spring",
+            "Winter"
+        ]
+    },
+    {
+        "name": "Lion fish",
+        "season": [
+            "Spring",
+            "Summer"
+        ]
+    },
+    {
+        "name": "Asian sheepshead",
+        "season": [
+            "Winter"
+        ]
+    },
+    {
+        "name": "Yellowfin tuna",
+        "season": [
+            "Winter"
+        ]
+    },
+    {
+        "name": "Sardine (silver quality)",
+        "season": [
+            "Summer",
+            "Fall"
+        ]
+    },
+    {
+        "name": "Sturgeon",
+        "season": [
+            "Summer",
+            "Fall",
+            "Winter"
+        ]
+    },
+    {
+        "name": "Gator gar",
+        "note": "day 3-28",
+        "season": [
+            "Spring"
+        ]
+    },
+    {
+        "name": "Arapaima",
+        "season": [
+            "Fall",
+            "Winter"
+        ]
+    },
+    {
+        "name": "Giant sea bass",
+        "note": "day 1-7",
+        "season": [
+            "Fall"
+        ]
+    },
+    {
+        "name": "Yellow moray eel",
+        "note": "Spring 15-28, Summer 15-28",
+        "season": [
+            "Spring",
+            "Summer"
+        ]
+    }
+]
