@@ -15,27 +15,38 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
 <li class="link-card">
   <a>
     <span>
-      <img src=`../../images/fish/${filename}` />
-      <h2>
-        {name}
-        <span>&rarr;</span>
-      </h2>
-      <p>
-        <!-- {season.map((item) => `- ${item} `)} -->
-        {season.length > 0 && <p>{season.join(", ")}</p>}
-      </p>
-      <p>
-        {note}
-      </p>
-      <p>
-        {weather}
-      </p>
-      <p>
-        {time}
-      </p>
-      <p>
-        {location}
-      </p>
+      <div class="fish-profile">
+        <img src=`../../images/fish/${filename}` />
+        <h2>
+          {name}
+        </h2>
+      </div>
+
+      <!-- {season.map((item) => `- ${item} `)} -->
+      <!-- {season.length > 0 && <p>{season.join(", ")}</p>} -->
+      <h5>{season.map((item) => <span class="badge">{item}</span>)}</h5>
+      <div class="contain-p">
+        
+        <!-- <p>
+          <b>Weather:</b> {weather}
+        </p> -->
+        <p><b>Weather :</b></p>
+        <ul class="list">
+          {weather.map((item) => <li>{item}</li>)}
+        </ul>
+        <p><b>Time :</b></p>
+        <h5>
+          {note}
+        </h5>
+        <ul class="list">
+          {time.map((item) => <li>{item}</li>)}
+        </ul>
+        <p><b>Location :</b></p>
+        <ul class="list">
+          {location.map((item) => <li>{item}</li>)}
+        </ul>
+        
+      </div>
     </span>
   </a>
 </li>
@@ -56,7 +67,8 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
     width: 100%;
     text-decoration: none;
     line-height: 1.4;
-    padding: calc(1.5rem - 1px);
+    padding: calc(1rem - 1px);
+    /* padding: 0.rem; */
     border-radius: 8px;
     color: white;
     background-color: #23262d;
@@ -70,6 +82,7 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
   p {
     margin-top: 0.5rem;
     margin-bottom: 0;
+    /* font-weight: bold; */
   }
   .link-card:is(:hover, :focus-within) {
     background-position: 0;
@@ -77,5 +90,42 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
   }
   .link-card:is(:hover, :focus-within) h2 {
     color: rgb(var(--accent-light));
+  }
+  .fish-profile {
+    display: flex;
+    /* background: blue; */
+  }
+
+  .fish-profile > img {
+    padding: 0 0.5rem;
+  }
+
+  .fish-profile > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+
+  h5 {
+    margin: 0.5rem;
+  }
+
+  .badge {
+    box-sizing: border-box;
+    border: 2px solid green;
+
+    font-size: 0.8rem;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 0.25rem;
+    /* text-align: center; */
+    border-radius: 99px;
+  }
+  .contain-p {
+    margin: 0.75rem;
+  }
+  .list {
+    padding-left: 1rem;
   }
 </style>
