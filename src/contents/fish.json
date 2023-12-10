@@ -5,7 +5,20 @@
             "Spring",
             "Summer"
         ],
-        "filename": "Catfish.png"
+        "filename": "Catfish.png",
+        "weather": [
+            "Rain",
+            "Storm"
+        ],
+        "time": [
+            "Evening",
+            "Night"
+        ],
+        "location": [
+            "Rice Field",
+            "Pond",
+            "River (Forest)"
+        ]
     },
     {
         "name": "Tilapia",
@@ -13,7 +26,18 @@
             "Spring",
             "Winter"
         ],
-        "filename": "Tilapia.png"
+        "filename": "Tilapia.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "All Day"
+        ],
+        "location": [
+            "Pond",
+            "Lake",
+            "Cavern (Earth Mine)"
+        ]
     },
     {
         "name": "Rainbow fish",
@@ -21,14 +45,38 @@
             "Spring",
             "Winter"
         ],
-        "filename": "Rainbow_fish.png"
+        "filename": "Rainbow_fish.png",
+        "weather": [
+            "Sunny",
+            "Windy",
+            "Snow",
+            "Blizzard"
+        ],
+        "time": [
+            "All Day"
+        ],
+        "location": [
+            "River (Town)"
+        ]
     },
     {
         "name": "Silver arowana",
         "season": [
             "Winter"
         ],
-        "filename": "Silver_arowana.png"
+        "filename": "Silver_arowana.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "Morning",
+            "Afternoon"
+        ],
+        "location": [
+            "Cavern (Earth Mine)",
+            "Cavern (Water Mine)",
+            "Cavern (Wind Mine)"
+        ]
     },
     {
         "name": "Koi (silver quality)",
@@ -36,7 +84,18 @@
             "Spring",
             "Summer"
         ],
-        "filename": "Koi.png"
+        "filename": "Koi.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "Morning"
+        ],
+        "location": [
+            "River (Town)",
+            "Cavern (Entrance)",
+            "Lake"
+        ]
     },
     {
         "name": "Pink snapper",
@@ -44,7 +103,18 @@
             "Spring",
             "Winter"
         ],
-        "filename": "Pink_snapper.png"
+        "filename": "Pink_snapper.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "Afternoon",
+            "Evening"
+        ],
+        "location": [
+            "Ocean (Dock)",
+            "Cavern (Wind Mine)"
+        ]
     },
     {
         "name": "Lion fish",
@@ -52,23 +122,56 @@
             "Spring",
             "Summer"
         ],
-        "filename": "Lionfish.png"
+        "filename": "Lionfish.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "Morning",
+            "Afternoon",
+            "Evening"
+        ],
+        "location": [
+            "Ocean (Beach)",
+            "Ocean (Forest)"
+        ]
     },
     {
         "name": "Asian sheepshead",
         "season": [
             "Winter"
         ],
-        "filename": "Asian_sheepshead.webp"
-        
+        "filename": "Asian_sheepshead.webp",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "All Day"
+        ],
+        "location": [
+            "Ocean (Forest)"
+        ]
     },
     {
         "name": "Yellowfin tuna",
         "season": [
             "Winter"
         ],
-        "filename": "Yellowfin_tuna.png"
-
+        "filename": "Yellowfin_tuna.png",
+        "weather": [
+            "Rain",
+            "Storm",
+            "Snow",
+            "Blizzard"
+        ],
+        "time": [
+            "Afternoon",
+            "Evening"
+        ],
+        "location": [
+            "Ocean (Dock)",
+            "Ocean (Beach)"
+        ]
     },
     {
         "name": "Sardine (silver quality)",
@@ -76,7 +179,18 @@
             "Summer",
             "Fall"
         ],
-        "filename": "Sardine.png"
+        "filename": "Sardine.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "Evening",
+            "Night"
+        ],
+        "location": [
+            "Ocean (Beach)",
+            "Ocean (Lookout)"
+        ]
     },
     {
         "name": "Sturgeon",
@@ -85,7 +199,21 @@
             "Fall",
             "Winter"
         ],
-        "filename": "Sturgeon.png"
+        "filename": "Sturgeon.png",
+        "weather": [
+            "Rain",
+            "Storm",
+            "Snow",
+            "Blizzard"
+        ],
+        "time": [
+            "Evening",
+            "Night"
+        ],
+        "location": [
+            "River (Farm)",
+            "Lake"
+        ]
     },
     {
         "name": "Gator gar",
@@ -93,7 +221,19 @@
         "season": [
             "Spring"
         ],
-        "filename" : "Gator_gar.png"
+        "filename": "Gator_gar.png",
+        "weather": [
+            "Rain",
+            "Storm"
+        ],
+        "time": [
+            "Morning",
+            "Noon"
+        ],
+        "location": [
+            "River (Forest)",
+            "Lake"
+        ]
     },
     {
         "name": "Arapaima",
@@ -101,7 +241,19 @@
             "Fall",
             "Winter"
         ],
-        "filename": "Arapaima.png"
+        "filename": "Arapaima.png",
+        "weather": [
+            "Rain",
+            "Storm",
+            "Snow",
+            "Blizzard"
+        ],
+        "time": [
+            "All Day"
+        ],
+        "location": [
+            "River (Forest)"
+        ]
     },
     {
         "name": "Giant sea bass",
@@ -109,7 +261,17 @@
         "season": [
             "Fall"
         ],
-        "filename": "Giant_sea_bass.png"
+        "filename": "Giant_sea_bass.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "Morning",
+            "Night"
+        ],
+        "location": [
+            "Ocean (Forest)"
+        ]
     },
     {
         "name": "Yellow moray eel",
@@ -118,6 +280,16 @@
             "Spring",
             "Summer"
         ],
-        "filename": "Yellow_moray_eel.png"
+        "filename": "Yellow_moray_eel.png",
+        "weather": [
+            "Any"
+        ],
+        "time": [
+            "Evening",
+            "Night"
+        ],
+        "location": [
+            "Ocean (Beach)"
+        ]
     }
 ]

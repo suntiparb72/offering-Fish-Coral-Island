@@ -4,25 +4,37 @@ interface Props {
   season: any;
   note: string;
   filename: string;
+  weather: any;
+  time: any;
+  location: any;
 }
 
-const { name, season, note, filename } = Astro.props;
+const { name, season, note, filename, weather, time, location } = Astro.props;
 ---
 
 <li class="link-card">
   <a>
     <span>
-		<img src=`../../images/fish/${filename}`>
+      <img src=`../../images/fish/${filename}` />
       <h2>
         {name}
         <span>&rarr;</span>
       </h2>
       <p>
         <!-- {season.map((item) => `- ${item} `)} -->
-		{season.length > 0 && <p>{season.join(', ')}</p>}
+        {season.length > 0 && <p>{season.join(", ")}</p>}
       </p>
       <p>
         {note}
+      </p>
+      <p>
+        {weather}
+      </p>
+      <p>
+        {time}
+      </p>
+      <p>
+        {location}
       </p>
     </span>
   </a>
