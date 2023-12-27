@@ -2,7 +2,7 @@
 interface Props {
   name: string;
   season: any;
-  note: string;
+  note?: string;
   filename: string;
   weather: any;
   time: any;
@@ -27,15 +27,12 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
       <h5>{season.map((item) => <span class="badge">{item}</span>)}</h5>
       <div class="contain-p">
         
-        <!-- <p>
-          <b>Weather:</b> {weather}
-        </p> -->
         <p><b>Weather :</b></p>
         <ul class="list">
           {weather.map((item) => <li>{item}</li>)}
         </ul>
         <p><b>Time :</b></p>
-        <h5>
+        <h5 style="color: red;">
           {note}
         </h5>
         <ul class="list">
