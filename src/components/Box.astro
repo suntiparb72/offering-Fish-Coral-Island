@@ -31,9 +31,9 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
           {weather.map((item) => <li>{item}</li>)}
         </ul>
         <p><b>Time :</b></p>
-        <h5 style="color: red;">
+        <h4 style="color: red; margin:.5rem;">
           {note}
-        </h5>
+        </h4>
         <ul class="list">
           {time.map((item) => <li>{item}</li>)}
         </ul>
