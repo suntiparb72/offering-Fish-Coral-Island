@@ -38,6 +38,11 @@ const { title } = Astro.props;
   <body>
     <slot />
   </body>
+  <footer>
+    <p>This website is not an official Coral Island website.</p>
+    <p>made with 💙 by <a href="https://github.com/suntiparb72">suntiparb72</a></p>
+    <a href="https://github.com/suntiparb72/offering-Fish-Coral-Island">Source Code</a>
+  </footer>
 </html>
 <style is:global>
   :root {
@@ -66,5 +71,9 @@ const { title } = Astro.props;
       Bitstream Vera Sans Mono,
       Courier New,
       monospace;
+  }
+  footer {
+    color: white;
+    text-align: center;
   }
 </style>
