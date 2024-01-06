@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "offering-fish-coral-island",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^3.1.1",
+    "@astrojs/partytown": "^2.0.3",
     "astro": "^4.0.3"
   }
 }

@@ -1,12 +1,12 @@
 ---
 interface Props {
   name: string;
-  season: any;
-  note: string;
+  season: string[];
+  note?: string;
   filename: string;
-  weather: any;
-  time: any;
-  location: any;
+  weather: string[];
+  time: string[];
+  location: string[];
 }
 
 const { name, season, note, filename, weather, time, location } = Astro.props;
@@ -26,18 +26,14 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
       <!-- {season.length > 0 && <p>{season.join(", ")}</p>} -->
       <h5>{season.map((item) => <span class="badge">{item}</span>)}</h5>
       <div class="contain-p">
-        
-        <!-- <p>
-          <b>Weather:</b> {weather}
-        </p> -->
         <p><b>Weather :</b></p>
         <ul class="list">
           {weather.map((item) => <li>{item}</li>)}
         </ul>
         <p><b>Time :</b></p>
-        <h5>
+        <h4 style="color: red; margin:.5rem;">
           {note}
-        </h5>
+        </h4>
         <ul class="list">
           {time.map((item) => <li>{item}</li>)}
         </ul>
@@ -45,7 +41,6 @@ const { name, season, note, filename, weather, time, location } = Astro.props;
         <ul class="list">
           {location.map((item) => <li>{item}</li>)}
         </ul>
-        
       </div>
     </span>
   </a>
